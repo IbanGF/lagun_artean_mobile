@@ -45,6 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
 .controller('homeController', homeController)
 .controller('voyageController', voyageController)
 .controller('mygroupsController', mygroupsController)
+.controller('jysuisController', jysuisController)
 
 //services//
 .service('connectService', connectService)

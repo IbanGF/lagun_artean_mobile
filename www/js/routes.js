@@ -38,6 +38,7 @@ function routes($stateProvider, $urlRouterProvider, $httpProvider) {
     }
   })
 
+
   .state('app.voyage', {
     url: '/voyage/:id',
     views: {
@@ -83,7 +84,17 @@ function routes($stateProvider, $urlRouterProvider, $httpProvider) {
         controller: 'mygroupsController'
       }
     }
-  });
+  })
+
+  .state('app.jysuis',{
+      url: '/jysuis',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/jysuis.html',
+          controller: 'jysuisController'
+        }
+      }
+    });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/login');
