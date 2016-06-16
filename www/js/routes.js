@@ -36,6 +36,16 @@ function routes($stateProvider, $urlRouterProvider, $httpProvider) {
         controller: 'homeController'
       }
     }
+  })  
+
+  .state('app.mygroups', {
+    url: '/mygroups',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/mygroups.html',
+        controller: 'mygroupsController'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback
