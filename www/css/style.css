@@ -72,3 +72,15 @@ p {
   font-weight: bolder;
   color: black;
 }
+
+.activite
+{
+  margin-left: 60px;
+}
+
+.buttonactivite {
+  opacity: 1;
+  box-shadow: 0px 0px 10px transparent;
+  transform: translate3d(0%, 0px, 0px);
+  background-color:#36648B;
+}
