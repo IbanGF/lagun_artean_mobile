@@ -43,6 +43,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
 .controller('loginCtrl', loginCtrl)
 .controller('signupController', signupController)
 .controller('homeController', homeController)
+.controller('voyageController', voyageController)
 
 //services//
 .service('connectService', connectService)

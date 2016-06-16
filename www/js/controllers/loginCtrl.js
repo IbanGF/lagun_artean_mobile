@@ -1,5 +1,8 @@
 function loginCtrl($scope, $timeout, $stateParams, ionicMaterialInk, $rootScope, $location, connectService) {
-  $scope.user = {};
+  $scope.user = {
+    name: '',
+    password: ''
+  };
 
   $scope.$parent.clearFabs();
   ionicMaterialInk.displayEffect();
@@ -7,6 +10,7 @@ function loginCtrl($scope, $timeout, $stateParams, ionicMaterialInk, $rootScope,
   $scope.connect = function() {
     console.log($scope.user);
     connectService.connect($scope.user).then(function(res) {
+      console.log(res.data);
       $rootScope.token = res.data.token;
       $rootScope.user = res.data.user;
       console.log('connected');

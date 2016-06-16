@@ -36,6 +36,43 @@ function routes($stateProvider, $urlRouterProvider, $httpProvider) {
         controller: 'homeController'
       }
     }
+  })
+
+  .state('app.voyage', {
+    url: '/voyage/:id',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/voyage.html',
+        controller: 'voyageController'
+      }
+    }
+  })
+
+  .state('app.voyage.amis', {
+    url: '/amis',
+    views: {
+      'voyageContent': {
+        templateUrl: 'templates/amis.html',
+      }
+    }
+  })
+
+  .state('app.voyage.calendar', {
+    url: '/calendar',
+    views: {
+      'voyageContent': {
+        templateUrl: 'templates/calendar.html',
+      }
+    }
+  })
+
+  .state('app.voyage.budget', {
+    url: '/budget',
+    views: {
+      'voyageContent': {
+        templateUrl: 'templates/budget.html',
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback

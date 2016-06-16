@@ -1,0 +1,39 @@
+<ion-view view-title="Profile">
+  <ion-content ng-class="{expanded:$scope.isExpanded}">
+    <div class="hero slide-up" style="background: url(img/login.jpg) center; background-size: cover;">
+      <div class="content">
+        <div class="row">
+          <div class="col col-33">
+            <a class="trip-city">Londres</a>
+          </div>
+          <div class="col col-33 col-offset-33">
+            <a ui-sref="app.groupes" class="trip-groupe">Lagunak</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-33">
+            <a class="trip-date">31/12/2015</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs tabs-dark tabs-icon-top static">
+      <a ui-sref="app.voyage.amis" class="tab-item">
+        <i class="icon ion-android-people"></i>
+        Amis
+      </a>
+      <a ui-sref="app.voyage.calendar" class="tab-item">
+        <i class="icon ion-android-calendar"></i>
+        Planning
+      </a>
+      <a ui-sref="app.voyage.budget" class="tab-item">
+        <i class="icon ion-social-usd"></i>
+        Budget
+      </a>
+    </div>
+    <ion-nav-view name="voyageContent" ng-class="{expanded: isExpanded}" ></ion-nav-view>
+
+    <h4 class="content padding double-padding-x" id="planning">Planning</h4>
+    <h4 class="content padding double-padding-x" id="budget">Budget</h4>
+  </ion-content>
+</ion-view>

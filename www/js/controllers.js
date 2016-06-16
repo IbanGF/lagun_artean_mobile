@@ -123,7 +123,7 @@ angular.module('starter.controllers', [])
   };
 
 
-  $timeout(function() {
-    $scope.hideHeader();
-  }, 0);
+  // $timeout(function() {
+  //   $scope.hideHeader();
+  // }, 0);
 });
