@@ -1,7 +1,14 @@
 <ion-view view-title="Voyages">
-  <ion-content class="login-background">
-  <!-- <ion-item class="add_Travel" type="item" ng-click="goToTabAddTravel(travel)">
-  </ion-item>   -->
+  <ion-content class="login-background no-header">
+  <div class="groupes" style="margin:20px;">
+      <h1>Mes voyages</h1>
+      <button
+        style="opacity: 1; box-shadow: 0px 0px 10px transparent; transform: translate3d(0%, 0px, 0px); background-color:#36648B; top:0px;"
+        nav-view="active"
+        id="fab-profile"
+        class="button button-fab button-fab-top-right button-energized-900 pane" ng-click="openModal()">
+        <i class="icon ion-plus"></i>
+      </button>
     <ion-list>
       <ion-item class="travels" ng-repeat="travel in travels" type="item" ng-click="goToTabTravel(travel)">
         <div class="row">

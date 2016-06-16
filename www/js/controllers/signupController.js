@@ -9,6 +9,7 @@ function signupController($scope, $location, $timeout, userService) {
         $location.path('/login');
       }, 2000);
     }).catch(function(res) {
+      $scope.signupMessage = {};  
       $scope.signupMessage.title = "Signup error";
       $scope.signupMessage.message = res.data;
     });

@@ -43,12 +43,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
 .controller('loginCtrl', loginCtrl)
 .controller('signupController', signupController)
 .controller('homeController', homeController)
-<<<<<<< HEAD
 .controller('voyageController', voyageController)
 .controller('mygroupsController', mygroupsController)
-=======
 .controller('travelsController', travelsController)
->>>>>>> nlddev
+
 
 //services//
 .service('connectService', connectService)
