@@ -28,6 +28,16 @@ function routes($stateProvider, $urlRouterProvider, $httpProvider) {
     }
   })
 
+    .state('app.travels', {
+    url: '/travels',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/travels.html',
+        controller: 'travelsController'
+      }
+    }
+  })
+
   .state('app.home', {
     url: '/home',
     views: {

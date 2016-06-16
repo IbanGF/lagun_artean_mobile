@@ -1,0 +1,16 @@
+<ion-view view-title="Voyages">
+  <ion-content class="login-background">
+  <!-- <ion-item class="add_Travel" type="item" ng-click="goToTabAddTravel(travel)">
+  </ion-item>   -->
+    <ion-list>
+      <ion-item class="travels" ng-repeat="travel in travels" type="item" ng-click="goToTabTravel(travel)">
+        <div class="row">
+          <div class="col col-65">
+            <h1 class="dark">{{travel.chosen_destination}}</h1>
+            <p>{{travel.start_date}}</p>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
