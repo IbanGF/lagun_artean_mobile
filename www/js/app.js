@@ -49,6 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
 //services//
 .service('connectService', connectService)
 .service('userService', userService)
+.service('groupService', groupService)
 
 //factories//
 

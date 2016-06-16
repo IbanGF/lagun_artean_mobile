@@ -1,21 +1,43 @@
-function mygroupsController($scope, $timeout, $stateParams, ionicMaterialInk, ionicMaterialMotion){
-    
-    // Set Header
-    $scope.$parent.clearFabs();
+function mygroupsController($rootScope, $scope, $timeout, $stateParams, ionicMaterialInk, ionicMaterialMotion, $ionicModal, groupService) {
 
-    // Set Motion
-    $timeout(function() {
-        ionicMaterialMotion.slideUp({
-            selector: '.slide-up'
-        });
-    }, 300);
+  $scope.group = {};
+  $scope.$parent.clearFabs();
 
-    $timeout(function() {
-        ionicMaterialMotion.fadeSlideInRight({
-            startVelocity: 3000
-        });
-    }, 700);
+  $ionicModal.fromTemplateUrl('templates/addGroupModal.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
 
-    // Set Ink
-    ionicMaterialInk.displayEffect();
+  $scope.openModal = function() {
+    $scope.modal.show();
+  };
+
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+
+  $scope.addGroup =function() {
+    var user_id = $rootScope.user._id;
+    console.log($rootScope.user);
+    groupService.create($scope.group, user_id).then(function(res){
+      console.log(res.data);
+    });
+  };
+
+  // Set Motion
+  $timeout(function() {
+    ionicMaterialMotion.slideUp({
+      selector: '.slide-up'
+    });
+  }, 300);
+
+  $timeout(function() {
+    ionicMaterialMotion.fadeSlideInRight({
+      startVelocity: 3000
+    });
+  }, 700);
+
+  // Set Ink
+  ionicMaterialInk.displayEffect();
 }
