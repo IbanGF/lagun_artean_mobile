@@ -71,7 +71,9 @@ function routes($stateProvider, $urlRouterProvider, $httpProvider) {
     views: {
       'voyageContent': {
         templateUrl: 'templates/budget.html',
-  })  
+      }
+    }
+  })
 
   .state('app.mygroups', {
     url: '/mygroups',
