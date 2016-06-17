@@ -13,7 +13,7 @@ https://docs.google.com/spreadsheets/d/1IQbF43wPFagV29-UHnP8phxqD0HkVKy9ZGBt67HX
 
 ####install NPM
 
-####install ionic
+####install ionic (sudo if needed on Linux and Mac)
 $ npm install -g ionic
 
 ####desktop browser testing
