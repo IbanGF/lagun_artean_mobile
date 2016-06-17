@@ -1,7 +1,7 @@
 function routes($stateProvider, $urlRouterProvider, $httpProvider) {
   $stateProvider
 
-  .state('app', {
+    .state('app', {
     url: '/app',
     abstract: true,
     templateUrl: 'templates/menu.html',
@@ -81,6 +81,16 @@ function routes($stateProvider, $urlRouterProvider, $httpProvider) {
       'menuContent': {
         templateUrl: 'templates/mygroups.html',
         controller: 'mygroupsController'
+      }
+    }
+  })
+
+  .state('app.travels', {
+    url: '/travels',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/travels.html',
+        controller: 'travelsController'
       }
     }
   });

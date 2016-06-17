@@ -1,0 +1,47 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h2 class="title">Création du voyage</h2>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="padding">
+      <div class="list">
+
+        <ion-item>
+          <ion-md-input placeholder="Nom du voyage" highlight-color="positive" type="text" ng-model="trip.name"></ion-md-input>
+        </ion-item>
+        <ion-item>
+          <ion-label primary fixed>Date de début:</ion-label>
+          <ion-md-input placeholder="" highlight-color="positive" type="date" ng-model="trip.start_date"></ion-md-input>
+        </ion-item>
+        <ion-item>
+          <ion-label primary fixed>Date de fin:</ion-label>
+          <ion-md-input placeholder="" highlight-color="positive" type="date" ng-model="trip.end_date"></ion-md-input>
+        </ion-item>
+        <ion-item>
+          <ion-md-input placeholder="Destination 1" highlight-color="positive" type="text" ng-model="trip.destinations[0].destination"></ion-md-input>
+        </ion-item>
+        <ion-item>
+          <ion-md-input placeholder="Destination 2" highlight-color="positive" type="text" ng-model="trip.destinations[1].destination"></ion-md-input>
+        </ion-item>
+        <ion-item>
+          <ion-md-input placeholder="Destination 3" highlight-color="positive" type="text" ng-model="trip.destinations[2].destination"></ion-md-input>
+        </ion-item>
+        <ion-item>
+          <ion-md-input type="number" placeholder="Mon Budget" ng-model="trip.budgets[0].budget"></ion-md-input>
+        </ion-item>
+      </div>
+      <div class="row">
+        <div class="col col-20">
+          <button class="button button-full button-positive ink" ng-click="closeModal()">
+            <i class="icon ion-close-round"></i>
+          </button>
+        </div>
+        <div class="col col-80">
+          <button class="button button-full button-positive ink" ng-click="addTravel()">Envoyer</button>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

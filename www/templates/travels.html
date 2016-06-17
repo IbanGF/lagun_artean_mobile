@@ -1,0 +1,31 @@
+<ion-view view-title="Voyages">
+  <ion-content class="login-background no-header">
+    <div class="groupes" style="margin:20px;">
+      <h1>Mes voyages</h1>
+      <button
+        style="opacity: 1; box-shadow: 0px 0px 10px transparent; transform: translate3d(0%, 0px, 0px); background-color:#36648B; top:0px;"
+        nav-view="active"
+        id="fab-profile"
+        class="button button-fab button-fab-top-right button-energized-900 pane"
+        ng-click="openModal()">
+        <i class="icon ion-plus"></i>
+      </button>
+      <ion-list>
+        <ion-item class="travels" ng-repeat="travel in travels" type="item">
+          <div class="row">
+            <div class="col col-20">
+              <a ng-click="deleteTrip(travel);">
+                <h1>
+                  <i class="right icon ion-trash-a"></i>
+                </h1>
+              </a>
+            </div>
+            <div class="col col-80" ui-sref="app.voyage({voyageID: travel._id})">
+              <h1 class="dark">{{travel.name}}</h1>
+              <p>{{travel.start_date}}</p>
+            </div>
+          </div>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-view>

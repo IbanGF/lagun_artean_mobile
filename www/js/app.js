@@ -45,11 +45,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
 .controller('homeController', homeController)
 .controller('voyageController', voyageController)
 .controller('mygroupsController', mygroupsController)
+.controller('travelsController', travelsController)
 
 //services//
 .service('connectService', connectService)
 .service('userService', userService)
 .service('groupService', groupService)
+.service('travelsService', travelsService)
 
 //factories//
 
