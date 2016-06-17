@@ -1,5 +1,5 @@
-lagun_artean mobile app
-Wild Code School, 3rd Hackathon in La Loupe, 15-16-17/6/2016
+##lagun_artean mobile app
+##Wild Code School, 3rd Hackathon in La Loupe, 15-16-17/6/2016
 
 Team members: 
 Nicolas Le Drezen - Orkatz Arano - Thomas Javanaud - Iban Goenaga Fontang
