@@ -1,5 +1,5 @@
-function jysuisController($scope, $state, $stateParams, $http) {
-  console.log('a');
+function jysuisController($scope, $state, $stateParams, $http, $ionicModal) {
+console.log('a');
 
   var myLatlng = new google.maps.LatLng(43.4833, -1.5667);
 
@@ -23,6 +23,21 @@ function jysuisController($scope, $state, $stateParams, $http) {
       lng: -1.5667
     }
   });
+
+
+  $ionicModal.fromTemplateUrl('templates/activityModal.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  $scope.openModal = function() {
+    $scope.modal.show();
+  };
+
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
 
 }
 

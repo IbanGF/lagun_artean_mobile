@@ -1,10 +1,14 @@
 <ion-view view-title="jysuis" align-title="left">
-  <ion-content class="no-header">
-       <h3 class="activite">Ajouter activité</h3>
-
-
-       <ion-toggle ng-model="POI" toggle-class="toggle-calm">Afficher POI</ion-toggle>
-   </div>
+  <ion-content class="login-background no-header">
+    <div class="jysuis" style="margin:20px;">
+       <h3 class="activity-title">Ajouter activité</h3>
+       <button style="margin-right:300px; margin-top:-15px; opacity: 1; box-shadow: 0px 0px 10px transparent; transform: translate3d(0%, 0px, 0px); background-color:#36648B; top:0px;"
+        nav-view="active"
+         id="fab-profile"
+         class="button button-fab button-fab-top-right button-energized-900 pane" ng-click="openModal()">
+         <i class="icon ion-plus"></i>
+       </button>
+     </div>
    <div id="map" data-tap-disabled="true" style="height:100%;width:100%"></div>
   </ion-content>
 </ion-view>

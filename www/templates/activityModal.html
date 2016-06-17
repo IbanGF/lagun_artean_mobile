@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h2 class="title">Activités proposés</h2>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="padding">
+      <div class="list">
+        <ion-md-input placeholder="Nom de l'activité" highlight-color="positive" type="text" ng-model="group.name"></ion-md-input>
+      </div>
+      <div class="row">
+        <div class="col col-20">
+          <button class="button button-full button-positive ink" ng-click="closeModal()">
+            <i class="icon ion-close-round"></i>
+          </button>
+        </div>
+        <div class="col col-80">
+          <button class="button button-full button-positive ink" ng-click="addactivity()">Proposer</button>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

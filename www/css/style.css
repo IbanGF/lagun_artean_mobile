@@ -84,3 +84,7 @@ p {
   transform: translate3d(0%, 0px, 0px);
   background-color:#36648B;
 }
+.activity-title {
+  margin-left: 65px;
+  color: white;
+}
