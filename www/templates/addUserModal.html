@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h2 class="title">User</h2>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="padding">
+      <ion-list>
+        <ion-item ng-repeat="user in selectedGroup.users" type="item" ng-init="checked=true">
+          <ion-checkbox ng-click="removeUserFromGroup(user)" ng-model="checked">{{user.name}}</ion-radio>
+        </ion-item>
+        <ion-item ng-repeat="userNotInGroup in usersNotInGroup" type="item">
+          <ion-checkbox ng-click="addUserToGroup(userNotInGroup)">{{userNotInGroup.name}}</ion-radio>
+        </ion-item>
+      </ion-list>
+      <div class="row">
+        <button class="button button-full button-positive ink" ng-click="closeModal(2)">
+          <i class="icon ion-close-round"></i>Fermer
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

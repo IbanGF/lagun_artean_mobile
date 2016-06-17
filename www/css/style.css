@@ -101,3 +101,14 @@ p {
   font-size: 1em;
   color: black;
 }
+
+/*Groupe*/
+
+.full-width {
+  width: 100%;
+}
+.f-rigth {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}

@@ -6,6 +6,7 @@ function signupController($scope, $location, $timeout, userService) {
     userService.create($scope.user).then(function(res) {
       $scope.user.name = res.data.username;
       $timeout(function() {
+        $scope.user = {};
         $location.path('/login');
       }, 2000);
     }).catch(function(res) {

@@ -13,7 +13,7 @@ function loginCtrl($scope, $timeout, $stateParams, ionicMaterialInk, $rootScope,
       console.log(res.data);
       $rootScope.token = res.data.token;
       $rootScope.user = res.data.user;
-      console.log('connected');
+      $scope.user = {};
       $location.path('/app/home');
     }).catch(function() {
       console.log('error');
